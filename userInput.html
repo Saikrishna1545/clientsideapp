@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project 2 User Input</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/layout.css">
+    </head>
+    <body style="background-color: rgba(12, 241, 154, 0.651);">
+        <nav style="background-color: rgba(7, 120, 212, 0.678);">
+            <ul>
+                <li class="list" style="text-align:left;"><a class="button" href="./index.html"><h4>Home</h4></a></li>
+                <li class="list" style="text-align:left;"><a class="button" href="./contact.html"><h4>Contact</h4></a></li>
+                <li class="list" style="text-align:left;"><a class="button" href="./userInput.html"><h4>User Input</h4></a></li>
+            </ul>
+        </nav>
+        <header style="background-color: rgba(12, 223, 238, 0.829);">
+            <img src="image/sai.jpg" alt="saikrishna profile pic" id="profilepicture" class="img-circle" width="250px" height="250px">
+            
+            <h1 id="header" style="text-align: left;">Project 2 - Styled Site</h1>
+            <hr>
+        </header>
+        <main style="text-align: center;">
+            <h2>Sum of numbers</h2>
+           <h3>Enter first Number :</h3>  <input id="c" type="Number" placeholder="First Number">
+        </br>
+    </br>
+    
+           <h3>Enter Second NUmber :</h3>  <input id="c" type="Number" placeholder="Second Number">
+        </br>
+    </br>
+   
+    <h3>Enter Third NUmber :</h3>  <input id="c" type="Number" placeholder="Third Number">
+        </br>
+    
+</br>
+      <button type="button" id="convert" onclick="convertkms()">Sum</button>
+    </br>
+    <h3>Result  :</h3><input type="Number" id="d">
+    </br>  
+            
+        </main> 
+        
+        <script>
+            function convertkms() {
+                if (document.getElementById("c").value != " ") {
+                var f = document.getElementById("c").value * 1.6;
+                  document.getElementById("d").value = Math.round(f);
+                } else {
+                  
+                  document.getElementById("d").value = "please enter the miles in above textbox";
+                }
+              }
+        </script>
+        <hr>
+        <footer>
+            <p>&copy; 2020 Saikrishna Emmadishetty, all rights reserved</p>
+        </footer>
+    </body>
+</html>

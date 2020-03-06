@@ -1,0 +1,29 @@
+body {
+    background-color: darkgray;
+}
+nav {
+    background-color: gold;
+    text-align: center;
+}
+header {
+    background-color: gold;
+}
+.button{
+    color: black;
+}
+.header {
+    text-align: center;
+}
+#list {
+    display: inline-block;
+    font-size: large;
+    margin: 1em;
+}
+#profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    text-align: center;
+}
