@@ -5,6 +5,17 @@
         <title>Project 2 User Input</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/layout.css">
+          <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
     </head>
     <body style="background-color: rgba(12, 241, 154, 0.651);">
         <nav style="background-color: rgba(7, 120, 212, 0.678);">
@@ -22,11 +33,11 @@
         </header>
         <main style="text-align: center;">
             <h2>Sum of numbers</h2>
-           <h3>Enter first Number :</h3>  <input id="c" type="Number" placeholder="First Number">
+           <h3>Enter first Number :</h3>  <input id="a" type="Number" placeholder="First Number">
         </br>
     </br>
     
-           <h3>Enter Second NUmber :</h3>  <input id="c" type="Number" placeholder="Second Number">
+           <h3>Enter Second NUmber :</h3>  <input id="b" type="Number" placeholder="Second Number">
         </br>
     </br>
    
@@ -36,25 +47,25 @@
 </br>
       <button type="button" id="convert" onclick="convertkms()">Sum</button>
     </br>
-    <h3>Result  :</h3><input type="Number" id="d">
+    <h3>Result  :</h3><input type="Number" id="d" readonly>
     </br>  
-            
+    <hr>
+    <script defer src="apps.js"></script>
+     <h4>Link to the test. <a href="quit.html">Click here</a></h4>
+    <hr>
+    <input type="button" class="btn btn-primary" value="getDogImage" id="getscore"><br><br>
+    <img type="text" id="dogarea">    
+    
         </main> 
         
-        <script>
-            function convertkms() {
-                if (document.getElementById("c").value != " ") {
-                var f = document.getElementById("c").value * 1.6;
-                  document.getElementById("d").value = Math.round(f);
-                } else {
-                  
-                  document.getElementById("d").value = "please enter the miles in above textbox";
-                }
-              }
-        </script>
+       
+
+
         <hr>
         <footer>
             <p>&copy; 2020 Saikrishna Emmadishetty, all rights reserved</p>
         </footer>
+        <script src="sum.js"></script>
+        
     </body>
 </html>
